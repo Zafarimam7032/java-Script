@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navclass {
+  text-decoration: solid;
+  text-transform: capitalize;
+  margin: 10px 4px 30px 178px;
+}
+button {
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.formclass {
+  margin: 10px 40px 30px 40px;
+}
+label {
+  font-size: medium;
+  padding-right: 20px;
+}
+h3 {
+  margin: 5px 40px 5px 40px;
+  text-transform: capitalize;
+  font-style: italic;
+}
+.text {
+  margin: 5px 40px 5px 40px;
+}
+#sumbit {
+  margin: 5px 40px 5px 94px;
+}

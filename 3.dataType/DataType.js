@@ -93,3 +93,31 @@ function sub(a, b) {
 
 let result = sub(100, 45);
 console.log(result);
+
+let arr1 = ["zafar", "kirti", "manoj", "neeraj"];
+
+console.log(typeof arr1);
+
+console.log(arr1[1]);
+
+const arr2 = [1, 2, 3, 4];
+
+console.log(arr2);
+
+let arr4 = arr2.filter((num) => num % 2 == 0);
+
+console.log(arr4);
+
+let studentVo = {
+  name: "zafar imam",
+  mobileNumber: "+917032871006",
+  address: "Pune",
+};
+
+console.log(studentVo);
+console.log(studentVo.name);
+studentVo.name = "Kirti Singh";
+
+console.log(studentVo.name);
+
+console.log(typeof studentVo);

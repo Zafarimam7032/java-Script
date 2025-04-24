@@ -17,3 +17,9 @@ create(); //function hoisting
 function create() {
   console.log("create function");
 }
+
+function add() {
+  return 10 + 20;
+}
+
+console.log(add());

@@ -23,3 +23,14 @@ let employeeVo = {
 };
 
 employeeVo.show();
+
+let dept = Symbol("id");
+
+let employee = {
+  name: "zafar imam",
+  address: "pune",
+  [dept]: "software",
+};
+
+console.log(employee);
+console.log(employee[dept]);

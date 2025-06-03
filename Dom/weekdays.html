@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weekDay</title>
+  </head>
+  <body>
+    <div class="prrent">
+      <div class="child">Sunday</div>
+      <div class="child">Monday</div>
+      <div class="child">tuesday</div>
+      <div class="child">wendesday</div>
+      <div class="child">thirsday</div>
+      <div class="child">Firday</div>
+    </div>
+    <script>
+      const data = document.querySelector(".prrent");
+      console.log(data);
+      console.log(data.children);
+      for (let i = 0; i < data.children.length; i++) {
+        console.log(data.children[i].innerHTML);
+        data.children[i].style.font = "30px";
+      }
+
+      const child = document.querySelector(".child");
+      console.log(child.parentNode);
+      console.log(child.nextElementSibling);
+      console.log(child.previousElementSibling);
+    </script>
+  </body>
+</html>

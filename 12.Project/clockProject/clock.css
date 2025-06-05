@@ -1,0 +1,9 @@
+body {
+  background-color: lightcyan;
+}
+.timeContainer {
+  background-color: yellow;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+}

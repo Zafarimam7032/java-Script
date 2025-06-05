@@ -1,0 +1,30 @@
+body {
+  background-color: beige;
+}
+
+.border {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+}
+.box {
+  display: flex;
+  margin-left: 30%;
+}
+
+#aquamarine {
+  background-color: aquamarine;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#brown {
+  background-color: brown;
+}

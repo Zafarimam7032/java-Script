@@ -1,0 +1,11 @@
+.photos {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.no-count {
+  list-style: none;
+  padding-left: 0;
+}

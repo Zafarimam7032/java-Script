@@ -1,0 +1,17 @@
+body {
+  background-color: gray;
+}
+.textClass {
+  margin-bottom: 20px;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.btnClass {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+}

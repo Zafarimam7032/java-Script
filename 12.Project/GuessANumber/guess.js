@@ -8,6 +8,8 @@ const div = document.querySelector("#resultid");
 
 const p = document.createElement("p");
 div.appendChild(p);
+const h6 = document.createElement("h2");
+div.appendChild(h6);
 btnsubmit.addEventListener("click", function (e) {
   e.preventDefault();
   // console.log(textField.value);
@@ -38,18 +40,19 @@ function validateNumber(guess) {
 function checkGuess(guess) {
   guesses.push(guess);
   remainingusses--;
-  if (remainingusses < 1) {
+  if (remainingusses < 0) {
+    start = false;
     textField.setAttribute("disabled", "");
-    display(`random Number was: ${randomNumber}`);
+    h6.innerHTML = `random Number was: ${randomNumber}`;
     startGame();
   } else if (guess === randomNumber) {
     display("number matched");
     textField.setAttribute("disabled", "");
     startGame();
   } else if (guess > randomNumber) {
-    display(`Number is too High ${randomNumber}`);
+    display(`Number is too High ${guess}`);
   } else if (guess < randomNumber) {
-    display(`Number is too Low ${randomNumber}`);
+    display(`Number is too Low ${guess}`);
   }
 }
 
@@ -66,6 +69,8 @@ function startGame() {
     p.innerHTML = "";
     guesses = [];
     remainingusses = 10;
+    h6.innerHTML = "";
+    start = true;
     textField.removeAttribute("disabled");
     display("");
   });

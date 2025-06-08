@@ -20,7 +20,7 @@ btnsubmit.addEventListener("click", function (e) {
 });
 
 let guesses = [];
-let remainingusses = 10;
+let remainingusses = 11;
 let start = true;
 function validateNumber(guess) {
   if (start) {
@@ -40,7 +40,7 @@ function validateNumber(guess) {
 function checkGuess(guess) {
   guesses.push(guess);
   remainingusses--;
-  if (remainingusses < 0) {
+  if (remainingusses < 1) {
     start = false;
     textField.setAttribute("disabled", "");
     h6.innerHTML = `random Number was: ${randomNumber}`;

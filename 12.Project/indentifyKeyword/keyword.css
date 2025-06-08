@@ -1,0 +1,26 @@
+body {
+  background-color: azure;
+}
+table,
+td,
+tr,
+th {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+td {
+  text-align: center;
+}
+
+td,
+th {
+  width: 100px;
+  height: 30px;
+  background-color: cyan;
+  color: white;
+}
+
+table {
+  background-color: antiquewhite;
+}
